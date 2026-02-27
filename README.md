@@ -1,5 +1,7 @@
 # 🔥 Calories Burn Prediction App
 
+**Streamlit deploy link: https://mlcaloriesburn-e7qg2laswdmzaquknwczql.streamlit.app/**
+
 An interactive Machine Learning web application built using **Streamlit** and **XGBoost** that predicts calories burned based on:
 
 - 👤 Gender  
