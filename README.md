@@ -1,67 +1,76 @@
-# 🔥 Calories Burn Prediction App
+# 🔥 Fitness & Diet Planner (ML Based)
 
-**Streamlit deploy link: https://mlcaloriesburn-e7qg2laswdmzaquknwczql.streamlit.app/**
-
-An interactive Machine Learning web application built using **Streamlit** and **XGBoost** that predicts calories burned based on:
-
-- 👤 Gender  
-- 🎂 Age  
-- ⏱ Exercise Duration (Hours)
+A Machine Learning based Streamlit web application that predicts calories burned during exercise and provides personalized food recommendations based on user fitness goals.
 
 ---
 
-## 🚀 Project Highlights
+## 🚀 Project Overview
 
-- Multi-step user interface
-- Dynamic title based on gender selection
-- Machine Learning regression model (XGBoost)
-- Real-time prediction
-- Clean and user-friendly design
+This application allows users to:
+
+- 👤 Select Gender
+- 🎯 Choose Fitness Goal (Weight Loss / Weight Gain)
+- 🎂 Enter Age & Weight
+- ⏱ Select Exercise Duration
+- 🔥 Predict Calories Burned using XGBoost
+- 🥗 Get Personalized Food Suggestions
+- 💪 Receive Goal-Based Diet & Workout Advice
+
+The system combines Machine Learning + Smart Diet Recommendation to create a complete fitness assistant.
+
+---
+
+## 🧠 Machine Learning Model
+
+- Algorithm: **XGBoost Regressor**
+- Dataset: Calories Burn Dataset
+- Features Used:
+  - Age
+  - Height (average)
+  - Weight
+  - Exercise Duration (minutes)
+  - Heart Rate (average)
+  - Body Temperature (average)
+  - Gender (Encoded)
+
+The model predicts estimated calories burned based on exercise duration and physical attributes.
 
 ---
 
-## 🧠 Machine Learning Details
+## 🥗 Diet Recommendation System
 
-- **Algorithm:** XGBoost Regressor  
-- **Problem Type:** Regression  
-- **Target Variable:** Calories  
-- **Libraries Used:** Scikit-learn, Pandas, NumPy  
+### 🔥 Weight Loss Mode
+- Low calorie foods
+- High fiber vegetables
+- Lean protein
+- Avoid fried & sugary foods
+- Cardio workout suggestion
 
-The model is trained on exercise and calorie datasets to predict calories burned during physical activity.
+### 💪 Weight Gain Mode
+- High protein foods
+- Calorie surplus focus
+- Muscle building foods
+- Strength training suggestion
 
 ---
-**⚙️ Installation**
 
-**1️⃣ Clone the Repository**
+## 🖥 App Flow
+Gender Selection
+↓
+Goal Selection (Loss/Gain)
+↓
+Age + Weight Input
+↓
+Exercise Hours
+↓
+Calories Prediction
+↓
+Personalized Food Suggestion
 
-```bash
-git clone https://github.com/your-username/calorie_app.git
-cd calorie_app
 
-**2️⃣ Create Virtual Environment (Optional but Recommended)**
-python -m venv venv
-venv\Scripts\activate      # Windows
-source venv/bin/activate   # Mac/Linux
+---
 
-**3️⃣ Install Dependencies**
-pip install -r requirements.txt
-
-**▶️ Run the App**
-streamlit run app.py
-
-The application will open automatically in your browser.
-
-**📊 Application Workflow**
-
-Select Gender
-
-Select Age
-
-Select Exercise Hours
-
-Get Predicted Calories Burned
-
-**🛠 Tech Stack**
+## 🛠 Tech Stack
 
 Python
 
@@ -75,14 +84,11 @@ XGBoost
 
 Scikit-learn
 
-**🔮 Future Improvements**
+## 🎯 Key Features
 
-Add weight & BMI input
-
-Add result visualization charts
-
-Deploy on Streamlit Cloud
-
-Improve UI styling
-
-## 📂 Project Structure
+✔ Multi-step interactive UI
+✔ Dynamic title update
+✔ Session state handling
+✔ Machine Learning prediction
+✔ Personalized diet plan
+✔ Clean and structured code
